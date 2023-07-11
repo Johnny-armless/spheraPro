@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ranking de Vendas</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .rank {
+      width: 30px;
+      text-align: center;
+    }
+    
+    .medal-image {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    
+    .gold-medal {
+      background-color: gold;
+    }
+    
+    .silver-medal {
+      background-color: silver;
+    }
+    
+    .bronze-medal {
+      background-color: #cd7f32;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      table {
+        font-size: 12px;
+      }
+      
+      th, td {
+        padding: 4px;
+      }
+      
+      .rank {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ranking de Vendas</h1>
+  <table>
+    <tr>
+      <th class="rank">Posição</th>
+      <th>Vendedor</th>
+      <th>Vendas</th>
+    </tr>
+    <tr>
+      <td class="rank gold-medal">
+        1
+      </td>
+      <td>
+        <img class="medal-image" src="medalhaOuro.png" alt="Medalha de Ouro">
+        Flavia Carvalho
+      </td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td class="rank silver-medal">
+        
+        2
+      </td>
+      <td>
+        <img class="medal-image" src="medalhaPrata.png" alt="Medalha de Prata">
+        Chain Silva
+      </td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td class="rank bronze-medal">
+        
+        3
+      </td>
+      <td>
+        <img class="medal-image" src="medalhaBronze.png" alt="Medalha de Bronze">
+        Abner Carvalho
+      </td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td class="rank">4</td>
+      <td>Madalena Antunes</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td class="rank">5</td>
+      <td>Alberto da Costa</td>
+      <td>25</td>
+    </tr>
+  </table>
+</body>
+</html>
+
